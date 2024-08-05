@@ -9,7 +9,7 @@ function App() {
     <>
       <div className="app">
         <div className="heading">
-          <h1>todo list</h1>
+          <h1>[todo list]</h1>
         </div>
         <List />
       </div>
