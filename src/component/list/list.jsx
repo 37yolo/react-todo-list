@@ -164,7 +164,7 @@ export default function List() {
                 </div>
               ))
             ) : (
-              <div className="card empty">No Task</div>
+              <div className="card empty">no task</div>
             )}
           </div>
           {openForm && (
