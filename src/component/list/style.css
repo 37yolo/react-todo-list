@@ -1,0 +1,114 @@
+.container {
+  min-width: 50vw;
+  padding: 1rem;
+  background-color: rgba(240, 248, 255, 0.411);
+}
+
+.top {
+  height: 2rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.display {
+  font-family: "Noto Sans Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.card {
+  border: 2px solid #1749ff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #1749ff;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+}
+.card:hover {
+  background-color: #c6e5ff75;
+}
+.card div {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.empty {
+  display: flex;
+  justify-content: center;
+  border-color: transparent;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.358);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  user-select: none;
+}
+.modal {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.disable-scroll {
+  overflow-y: hidden;
+}
+
+.card p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0;
+  margin: 0 0 4px 0;
+  position: relative;
+}
+.card input[type="checkbox"] {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.card .completed {
+  color: #1749ff6f;
+}
+.card .completed::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  right: 0%;
+  height: 2px;
+  background-color: rgba(23, 108, 255, 0.71);
+  animation: strike 0.1s ease-in;
+}
+
+@keyframes strike {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 80vw;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+  .actionBtn {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

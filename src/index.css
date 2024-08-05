@@ -1,0 +1,23 @@
+/* 
+.heading-font {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+  
+.body-font{
+  font-family: "Noto Sans Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+} 
+*/
+
+:root{
+  background-color: rgb(213, 224, 227);
+}
+body {
+  margin:0px;
+  padding: 0px;
+}

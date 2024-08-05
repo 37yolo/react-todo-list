@@ -1,0 +1,49 @@
+.selection {
+  font-family: "Press Start 2P", system-ui;
+  font-style: normal; 
+  text-decoration: none;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  width: 12rem;
+}
+.wrapper{
+  z-index: 999;
+  border: #1749ff;
+  color: #1749ff;
+  border-radius: 1px;
+  border: 2px solid;
+}
+
+.selector{
+  height: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
+  padding: 0 0.5rem;
+}
+.selector:hover{
+  background: #1749ff;
+  color:white;
+}
+.open{
+  background: #1749ff;
+  color:white;
+}
+
+.option{
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: row;
+  height: 2rem;
+  padding-left: 0.5rem;
+  align-items: center;
+}
+.option:hover{
+  background: #1749ff;
+  color:white;
+}
+.option input[type=radio]{
+  width: 10px;
+}

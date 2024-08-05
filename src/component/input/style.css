@@ -1,0 +1,42 @@
+.input-wrapper {
+  position: relative;
+  width: 20rem;
+  overflow: hidden;
+}
+
+.input-wrapper input {
+  font-family: "Noto Sans Mono", monospace;
+  font-optical-sizing: auto;
+  height: 2rem;
+  color: rgb(60, 60, 60);
+  font-size: 1.5rem;
+  font-weight: 500;
+  background-color: rgba(255, 255, 255, 0.252);
+  border: 1px solid transparent;
+  border-bottom-color: hsla(240, 80%, 30%, 0.525);
+}
+
+.input-wrapper input:focus {
+  outline: none;
+}
+
+.input-wrapper input::placeholder {
+  color: hsla(0, 0%, 24%, 0.181);
+}
+
+span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #1749ff;
+  transform-origin: bottom right;
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
+}
+
+.input-wrapper input:focus ~ span {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}

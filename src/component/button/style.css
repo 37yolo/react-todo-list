@@ -1,0 +1,89 @@
+button {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  text-decoration: none;
+  background-color: transparent;
+  color: #1749ff;
+  border-radius: 1px;
+  border: 2px solid;
+  padding: 0.5em 0.75em;
+  position: relative;
+  outline: none;
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+button::before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #1749ff;
+  transform-origin: center left;
+  transform: scaleX(0);
+  transition: transform 0.25s ease-in-out;
+}
+
+button:hover::before {
+  transform-origin: center right;
+  transform: scaleX(1);
+}
+button:hover {
+  cursor: pointer;
+  top: -5px;
+  left: -5px;
+  z-index: +1;
+  font-size: 1rem;
+  color: white;
+  border-color: #1749ff;
+  box-shadow: 1px 1px 0px 0px #0b247f, 1px 1px 0px 0px #0b247f,
+    2px 2px 0px 0px #0b247f, 3px 3px 0px 0px #0b247f, 4px 4px 0px 0px #0b247f,
+    5px 5px 0px 0px #0b247f;
+}
+button:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 0px;
+  left: 0px;
+  border-radius: 1px;
+}
+
+.delete {
+  color: #a11528;
+}
+.delete::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #a11528;
+  transform-origin: center left;
+  transform: scaleX(0);
+  transition: transform 0.25s ease-in-out;
+}
+
+.delete:hover::before {
+  transform-origin: center right;
+  transform: scaleX(1);
+}
+.delete:hover {
+  font-size: 1rem;
+  color: white;
+  border-color: #a11528;
+  box-shadow: 1px 1px 0px 0px #7f0b0b, 1px 1px 0px 0px #7f0b0b,
+    2px 2px 0px 0px #7f0b0b, 3px 3px 0px 0px #7f0b0b, 4px 4px 0px 0px #7f0b0b,
+    5px 5px 0px 0px #7f0b0b;
+}
+.delete:active {
+  box-shadow: 0px 0px 0px 0px;
+  border-radius: 1px;
+}

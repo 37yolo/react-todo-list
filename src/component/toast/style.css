@@ -1,0 +1,43 @@
+.toast{
+    width: 20rem;
+    height: 3rem;
+    background-color: #1749ff;
+    border: 2px solid #1749ff;
+    position: fixed;
+    right:2%;
+    bottom: 2%;
+    animation: toast 1 ease-in;
+    display: flex;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+    z-index: 9999;
+}
+.message{
+    width: 20rem;
+    display: flex;
+    padding: 0 1rem;
+    justify-content: space-between;
+}
+
+.message p{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: "Noto Sans Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.red{
+    border-color: #a11528;
+    background-color: #a11528;
+}
+
+@keyframes toast {
+    0% {
+        right: -100%;
+    }
+    100% {
+        right:2%;
+    }
+  }

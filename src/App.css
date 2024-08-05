@@ -1,0 +1,15 @@
+.app{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.heading h1{
+  margin: 0px;
+  padding: 0px;
+}
+.heading{
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  color: rgb(19, 60, 165);
+  padding: 1rem;
+}
