@@ -31,11 +31,11 @@ button::before {
   transition: transform 0.25s ease-in-out;
 }
 
-button:hover::before {
+.paddingButton:hover > button::before {
   transform-origin: center right;
   transform: scaleX(1);
 }
-button:hover {
+.paddingButton:hover > button {
   cursor: pointer;
   top: -5px;
   left: -5px;
@@ -71,11 +71,11 @@ button:active {
   transition: transform 0.25s ease-in-out;
 }
 
-.delete:hover::before {
+.paddingButton:hover >.delete::before {
   transform-origin: center right;
   transform: scaleX(1);
 }
-.delete:hover {
+.paddingButton:hover > .delete {
   font-size: 1rem;
   color: white;
   border-color: #a11528;
@@ -86,4 +86,8 @@ button:active {
 .delete:active {
   box-shadow: 0px 0px 0px 0px;
   border-radius: 1px;
+}
+
+.paddingButton {
+  padding: 0 5px 5px 0;
 }
